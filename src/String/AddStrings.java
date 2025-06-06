@@ -1,6 +1,7 @@
 package String;
 
 import java.util.Arrays;
+import java.util.OptionalInt;
 import java.util.Scanner;
 
 import static java.time.temporal.TemporalAdjusters.next;
@@ -8,8 +9,24 @@ import static java.time.temporal.TemporalAdjusters.next;
 public class AddStrings {
 
 
-    static void addString(int[] arr1,int[] arr2){
-        int
+    static void addString(int[] arr1,int[] arr2,int n,int m){
+        int count1=0;
+        int count2=0;
+        for(int i=0; i<n; i++){
+            if(arr1[i]>count1){
+                count1=arr1[i];
+
+            }
+        }
+        for(int i=0; i<m; i++){
+            if(arr2[i]>count2){
+                count2=arr2[i];
+
+            }
+        }
+        System.out.println(count1);
+        System.out.println(count2);
+
 
 
 
@@ -28,6 +45,7 @@ public class AddStrings {
         for(int i=0; i<n; i++){
             arr2[i]=sc.nextInt();
         }
+        addString(arr1,arr2,n,m);
 
     }
 }
