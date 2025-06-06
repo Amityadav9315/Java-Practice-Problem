@@ -27,9 +27,6 @@ public class AddStrings {
         System.out.println(count1);
         System.out.println(count2);
 
-
-
-
     }
 
     public static void main(String[] args) {
@@ -42,7 +39,7 @@ public class AddStrings {
         for(int i=0; i<n; i++){
             arr1[i]=sc.nextInt();
         }
-        for(int i=0; i<n; i++){
+        for(int i=0; i<m; i++){
             arr2[i]=sc.nextInt();
         }
         addString(arr1,arr2,n,m);
