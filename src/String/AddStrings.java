@@ -12,11 +12,9 @@ public class AddStrings {
     static void addString(int[] arr1,int[] arr2,int n,int m){
         int count1=0;
         int count2=0;
+        int[]
         for(int i=0; i<n; i++){
-            if(arr1[i]>count1){
-                count1=arr1[i];
 
-            }
         }
         for(int i=0; i<m; i++){
             if(arr2[i]>count2){
