@@ -4,7 +4,19 @@ import java.util.Scanner;
 
 public class EvenOdd {
 
-    static   void evenOdd(){
+    static   void evenOdd(int[] arr,int n){
+
+        int[] arr1=new int[n];
+        int index=0;
+
+        for(int i=0; i<n; i++){
+
+            if(n%2!=0){
+
+            }
+        }
+
+
 
 
 
