@@ -11,9 +11,22 @@ public class EvenOdd {
 
         for(int i=0; i<n; i++){
 
-            if(n%2!=0){
+            if(arr[i]%2!=0){
+
+                arr1[index++]=arr[i];
 
             }
+        }
+        for(int i=0; i<n; i++) {
+            if(arr[i]%2==0){
+                arr1[index++]=arr[i];
+
+
+            }
+        }
+
+        for(int x: arr1){
+            System.out.println(x);
         }
 
 
@@ -32,6 +45,8 @@ public class EvenOdd {
             arr[i]=sc.nextInt();
 
         }
+
+        evenOdd(arr,n);
 
     }
 }
