@@ -7,13 +7,13 @@ public class RotateArray {
 
 
     static void rotateArray(int[] arr,int n,int k){
-        int[] arr1=new int[n];
-         for(int i=0; i<k; i++){
+        int[] arr1=new int[n];  int index=0;
+         for(int i=k;i<n;i++){
 
-           arr1[i]=arr[i];
+           arr1[index++]=arr[i];
            }
-        for(int i=arr1.length; i<n; i++){
-             arr1[i]=arr[1];
+        for(int i=0;i<n; i++){
+             arr1[index++]=arr[i];
          }
          for(int x: arr1){
             System.out.println(x);
