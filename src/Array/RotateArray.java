@@ -13,11 +13,12 @@ public class RotateArray {
            arr1[i]=arr[i];
            }
         for(int i=arr1.length; i<n; i++){
-        }
-
-
-
-    public static void main(String[] args) {
+             arr1[i]=arr[1];
+         }
+         for(int x: arr1){
+            System.out.println(x);
+}
+}   public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int k=sc.nextInt();
