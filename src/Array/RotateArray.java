@@ -9,12 +9,11 @@ public class RotateArray {
     static void rotateArray(int[] arr,int n,int k){
         int[] arr1=new int[n];
         int index=0;
-        for(int i=0; i<n; i++){
-             arr1[i]=arr[i];
+        for(int i=k-1;i<n;i++){
+            arr1[index++]=arr[i];
 
 
-
-
+       }
 
 
 
