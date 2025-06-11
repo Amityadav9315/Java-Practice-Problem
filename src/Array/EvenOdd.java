@@ -28,7 +28,7 @@ public class EvenOdd {
         for(int x: arr1){
             System.out.println(x);
         }
-        gugughhi
+
 
 
 
