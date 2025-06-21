@@ -5,6 +5,18 @@ import java.util.Scanner;
 public class UnionofTwoSortedArray {
 
     static void unionogSortedArray(int[] arr1,int[] arr2,int n,int m){
+        int index=0;
+        int[] result=new  int[index++];
+
+        for(int i=0; i<n; i++){
+            result[index++]=arr1[i];
+        }
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+
+            }
+
+        }
 
 
 
