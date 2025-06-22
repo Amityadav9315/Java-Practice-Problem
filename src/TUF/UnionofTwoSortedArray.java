@@ -11,13 +11,11 @@ public class UnionofTwoSortedArray {
 
         // Add elements from arr1
         for (int i = 0; i < n; i++) {
-            // Avoid duplicates
             if (index == 0 || result[index - 1] != arr1[i]) {
                 result[index++] = arr1[i];
             }
         }
 
-        // Add elements from arr2 if not already present
         for (int i = 0; i < m; i++) {
             boolean isPresent = false;
             for (int j = 0; j < index; j++) {
