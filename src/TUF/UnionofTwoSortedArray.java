@@ -12,8 +12,12 @@ public class UnionofTwoSortedArray {
             result[index++]=arr1[i];
         }
         for(int i=0; i<n; i++){
+            result[index++]=arr1[i];
             for(int j=0; j<n; j++){
-                result[index++]=arr1[i];
+
+                if(arr2[i]!=result[j]){
+                    result[index++]=
+                }
                
             }
 
