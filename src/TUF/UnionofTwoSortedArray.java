@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class UnionofTwoSortedArray {
 
-    static void unionogSortedArray(int[] arr1,int[] arr2,int n,int m){
+    static void unionSortedArray(int[] arr1,int[] arr2,int n,int m){
         int index=0;
         int[] result=new  int[index++];
 
@@ -16,11 +16,14 @@ public class UnionofTwoSortedArray {
             for(int j=0; j<n; j++){
 
                 if(arr2[i]!=result[j]){
-                    result[index++]=
+                    result[index++]=arr2[i];
                 }
                
             }
 
+        }
+        for(int x: result){
+            System.out.println(x);
         }
 
 
@@ -40,6 +43,7 @@ public class UnionofTwoSortedArray {
         for(int i=0; i<n; i++){
             arr2[i]=sc.nextInt();
         }
+        unionSortedArray(arr1,arr2,n,m);
 
     }
 }
