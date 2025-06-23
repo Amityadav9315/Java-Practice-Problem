@@ -4,29 +4,37 @@ import java.util.Scanner;
 
 public class SimpleCalculator {
 
-    static  void simpleCalculator(int ch,int n1,int n2,int result){
+    static  void simpleCalculator(int ch,int n1,int n2) {
+        int result = 0;
+        while (true) {
+            if(ch=='+'||ch=='-'||ch=='*'||ch=='%') {
 
-        if(ch=='+'){
-            result=n1+n2;
+                if (ch == '+') {
+                    result = n1 + n2;
+
+                } else if (ch == '-') {
+                    result = n1 - n2;
+                } else if (ch == '*') {
+                    result = n1 * n2;
+
+                } else if (ch == '%') {
+                    result = n1 % n2;
+
+                }
+            }
+            else if(ch=='X'){
+                break;
+            }
+
+             else {
+                System.out.println("Invalid operator");
+            }
+
+
+            System.out.println(result);
 
 
         }
-        else if(ch=='-'){
-            result=n1-n2;
-        }
-        else if (ch=='*') {
-            result=n1*n2;
-
-        } else if (ch=='%') {
-            result=n1%n2;
-
-        }
-
-
-        {
-
-        }
-
 
     }
 
@@ -36,7 +44,9 @@ public class SimpleCalculator {
         char ch=sc.nextLine().charAt(0);
         int n1=sc.nextInt();
         int n2=sc.nextInt();
-        int result=sc.nextInt();
+
+
+        simpleCalculator(ch,n1,n2);
 
     }
 }
