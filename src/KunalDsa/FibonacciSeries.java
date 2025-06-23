@@ -10,9 +10,11 @@ public class FibonacciSeries {
         int b=1;
 
 
-        for(int i=0; i<2; i++){
+        for(int i=0; i<n; i++){
              int c=a+b;
-            System.out.println(c+" ");
+            System.out.print(c+" ");
+            a=b;
+            b=c;
 
 
 
@@ -28,6 +30,7 @@ public class FibonacciSeries {
         Scanner sc=new Scanner(System.in);
 
         int n=sc.nextInt();
+        fibonacciSeries(n);
 
     }
 }
