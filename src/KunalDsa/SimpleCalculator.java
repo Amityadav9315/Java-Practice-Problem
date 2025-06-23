@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SimpleCalculator {
 
-    static void simpleCalculator(int ch, int n1, int n2) {
+    static void simpleCalculator(char ch, int n1, int n2) {
         int result = 0;
 
         if (ch == '+' || ch == '-' || ch == '*' || ch == '%') {
@@ -37,7 +37,7 @@ public class SimpleCalculator {
         char ch;
         while (true) {
             System.out.println("Enter the operator");
-            ch = sc.nextLine().charAt(0);
+            ch = sc.next().charAt(0);
             if (ch == 'X' || ch == 'x') {
                 System.out.println("Exit");
                 break;
