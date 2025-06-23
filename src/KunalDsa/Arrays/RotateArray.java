@@ -12,7 +12,17 @@ public class RotateArray {
         for(int i=0; i<k; i++){
             arr1[i]=arr[i];
         }
-        for(int i=0; i<n; i++)
+        for(int i=k+1; i<n; i++){
+            result[index++]=arr[i];
+        }
+        for(int i=0; i<k; i++){
+            result[k-i]=arr[i];
+
+        }
+
+        for(int x:result){
+            System.out.println(result);
+        }
 
 
 
