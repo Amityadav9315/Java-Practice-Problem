@@ -4,27 +4,32 @@ import java.util.Scanner;
 
 public class kthLargest {
 
-    static  void kthlargest(int[] arr,int k,int n){
+    static  void kthlargest(int[] arr,int k,int n) {
 
-        int max=0;
-        int maxIndex=0;
+        int max = 0;
+        int maxIndex = 0;
 
 
-        for(int j=1; j<k; j++){
+        for (int j = 1; j < k; j++) {
 
-        max=0;
-        for(int i=0; i<n; i++){
+            max = 0;
+            for (int i = 0; i < n; i++) {
 
-            if(arr[i]>max){
-                max=arr[i];
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+
+            }
+
+
+        }
+        max = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
             }
         }
-
-
-
-
-
-
+        System.out.println(max);
     }
 
     public static void main(String[] args) {
