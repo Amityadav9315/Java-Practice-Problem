@@ -18,7 +18,9 @@ public class UpperCaseorLowercase {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        char ch=sc.nextLine();
+        char ch=sc.nextLine().charAt(0);
+
+        upperorLowercase(ch);
 
 
 
