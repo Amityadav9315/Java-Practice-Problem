@@ -8,6 +8,12 @@ public class FibonacciSeries {
     static   void fibonacciSeries(int n){
         int a=0;
         int b=1;
+        if(n<=2){
+            System.out.println(n);
+
+
+        }
+
 
 
         for(int i=0; i<n; i++){
