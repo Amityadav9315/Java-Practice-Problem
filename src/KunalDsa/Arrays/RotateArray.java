@@ -39,6 +39,7 @@ public class RotateArray {
         for(int i=0; i<n; i++){
             arr[i]=sc.nextInt();
         }
+        rotateArray(arr,k,n);
 
     }
 }
