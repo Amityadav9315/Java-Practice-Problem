@@ -5,7 +5,11 @@ import java.util.Scanner;
 public class FibonacciSeries {
 
 
-    static   void fibonacciSeries(){
+    static   void fibonacciSeries(int n){
+
+        for(int i=0; i<n; i++){
+
+        }
 
 
 
