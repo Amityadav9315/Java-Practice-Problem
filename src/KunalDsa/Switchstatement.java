@@ -22,10 +22,6 @@ public class Switchstatement {
             default:
                 System.out.println("Invalid");
         }
-
-
-
-
     }
 
     public static void main(String[] args) {
@@ -34,3 +30,7 @@ public class Switchstatement {
         switchStatement(fruit);
     }
 }
+
+
+
+
