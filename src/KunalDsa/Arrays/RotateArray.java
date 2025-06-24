@@ -23,10 +23,7 @@ public class RotateArray {
         for(int x:result){
             System.out.println(result);
         }
-
-
-
-
+        if(fruits.equals("mango")){
 
 
     }
