@@ -23,6 +23,9 @@ public class LeadersinAnArray {
 
 
         }
+        for(int x:arr1){
+            System.out.print(x+" ");
+        }
     }
 
     public static void main(String[] args) {
@@ -33,5 +36,6 @@ public class LeadersinAnArray {
             arr[i]=sc.nextInt();
 
         }
+        leadersinAnArray(arr,n);
     }
 }
