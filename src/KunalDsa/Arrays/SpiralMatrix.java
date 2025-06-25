@@ -10,13 +10,16 @@ public class SpiralMatrix {
         int[] result=new int[c];
 
         for(int i=0; i<n; i++){
-            for(int i=0; i<m; i++){
+            for(int j=0; j<m; j++){
 
 
-                arr[]
+                result[i]=arr[i][j];
 
 
             }
+        }
+        for(int x:result){
+            System.out.print(x+" ");
         }
 
 
@@ -34,5 +37,7 @@ public class SpiralMatrix {
                 arr[n][m]=sc.nextInt();
             }
         }
+
+        spiralMatrix(arr,n,m);
     }
 }
