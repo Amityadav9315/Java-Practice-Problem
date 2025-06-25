@@ -34,4 +34,3 @@ public class Movezeroes {
         moveZeroes(arr,n);
     }
 }
-fd.kfd
