@@ -5,20 +5,24 @@ import java.util.Scanner;
 public class LeadersinAnArray {
 
 
-    static  void   leadersinAnArray(int  arr,int n){
+    static  void   leadersinAnArray(int[]  arr,int n) {
 
-        int[] arr1=new int[n];
+        int[] arr1 = new int[n];
+        int index=0;
 
-        for(int i=n-1; i>0; i++){
+        for (int i = n - 1; i > 0; i++) {
+            for (int j = n - 2; j > 0; j++) {
 
-            if(arr1[i]>
+                if (arr[i] > arr[j]){
+                    arr1[index++]=arr[i];
+
+                }
+
+
+            }
 
 
         }
-
-
-
-
     }
 
     public static void main(String[] args) {
