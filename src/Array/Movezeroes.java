@@ -19,7 +19,7 @@ public class Movezeroes {
 
         }
         for(int x: result){
-            System.out.println(result);
+            System.out.println(x);
         }
     }
 
@@ -34,3 +34,4 @@ public class Movezeroes {
         moveZeroes(arr,n);
     }
 }
+fd.kfd
