@@ -9,6 +9,13 @@ public class LeadersinAnArray {
 
         int[] arr1=new int[n];
 
+        for(int i=n-1; i>0; i++){
+
+            if(arr1[i]>
+
+
+        }
+
 
 
 
