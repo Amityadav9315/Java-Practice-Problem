@@ -14,7 +14,14 @@ public class RichestCustomerWealth {
 
                 sum=sum+arr[i][j];
             }
+            if(sum>max){
+                max=sum;
+
+            }
+            sum=0;
         }
+
+        System.out.println(max);
 
 
     }
@@ -32,6 +39,7 @@ public class RichestCustomerWealth {
                 arr[i][j]=sc.nextInt();
             }
         }
+        richestCustomerWealth(arr,n,m);
 
     }
 }
