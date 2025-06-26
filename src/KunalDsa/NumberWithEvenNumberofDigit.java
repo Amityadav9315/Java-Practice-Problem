@@ -32,6 +32,7 @@ public class NumberWithEvenNumberofDigit {
 
 
         }
+        System.out.println(count1);
 
 
 
@@ -46,5 +47,6 @@ public class NumberWithEvenNumberofDigit {
             arr[i]=sc.nextInt();
 
         }
+        evenNoofDigit(arr,n);
     }
 }
