@@ -9,10 +9,12 @@ public class SearchIn2Dmatrix2 {
         int count=0;
         int target=50;
 
-        for(int i=0; i<n; i++){
+        for(int i=0; i<n; i++) {
+            for (int j = 0; j < m; j++) {
 
-            if(arr[n][m]==target){
-                count++;
+                if (arr[i][j] == target) {
+                    count++;
+                }
             }
         }
         if(count>=1){
@@ -33,7 +35,7 @@ public class SearchIn2Dmatrix2 {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
 
-                arr[n][m] = sc.nextInt();
+                arr[i][j] = sc.nextInt();
             }
 
         }
