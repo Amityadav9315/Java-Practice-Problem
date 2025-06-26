@@ -6,7 +6,19 @@ public class LinearSearch {
 
     static  void linearSearch(int[] arr,int n){
         int target=10;
-        for(int )
+        int count=0;
+        for(int  i=0; i<n; i++){
+            if(arr[i]==target){
+                count++;
+            }
+
+        }
+        if(count>=1){
+            System.out.println("Element found");
+        }
+        else{
+            System.out.println("Element Not found");
+        }
 
 
     }
@@ -18,5 +30,6 @@ public class LinearSearch {
         for(int i=0; i<n; i++){
             arr[i]=sc.nextInt();
         }
+        linearSearch(arr,n);
     }
 }
