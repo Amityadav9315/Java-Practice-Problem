@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class SpiralMatrix {
 
     static void spiralMatrix(int[][] arr, int n, int m) {
-        int top = 0, bottom = n - 1, left = 0, right = m - 1;
+        int top=0, bottom =n-1, left =0, right =m-1;
+
+
 
         while (top <= bottom && left <= right) {
             for (int i = left; i <= right; i++) {
                 System.out.print(arr[top][i] + " ");
             }
             top++;
-
             for (int i = top; i <= bottom; i++) {
                 System.out.print(arr[i][right] + " ");
             }
             right--;
-
             if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
                     System.out.print(arr[bottom][i] + " ");
