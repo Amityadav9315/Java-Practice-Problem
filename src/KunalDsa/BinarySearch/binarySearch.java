@@ -15,8 +15,6 @@ public class binarySearch {
             if(target==arr[mid]){
                 System.out.println("Element found at index :"+mid);
                 break;
-                csdjkksvlf
-
                 }
             else if(target>arr[mid]){
                 start=mid+1;
