@@ -10,12 +10,12 @@ public class binarySearch {
         int start=0;
         int target=50;
         int end= arr.length-1;
-
-
         while(start<=end){
             int mid=start+(end-start)/2;
             if(target==arr[mid]){
-                System.out.println(mid);
+                System.out.println("Element found at index :"+mid);
+                break;
+                csdjkksvlf
 
                 }
             else if(target>arr[mid]){
@@ -40,5 +40,7 @@ public class binarySearch {
 
             arr[i]=sc.nextInt();
         }
+
+        binarySearch(arr,n);
     }
 }
