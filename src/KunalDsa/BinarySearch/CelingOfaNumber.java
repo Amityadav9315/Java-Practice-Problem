@@ -6,10 +6,10 @@ public class CelingOfaNumber {
 
     static  void   cealingofaNumber(int[] arr,int n){
 
-        int min=arr[0];
+        int celing=-1;
         int start=0;
         int end=arr.length-1;
-        int target=50;
+        int target=13;
 
 
         while(start<=end){
@@ -17,7 +17,7 @@ public class CelingOfaNumber {
             int mid=start+(end-start)/2;
 
             if(target==arr[mid]){
-                System.out.println("Element found at index:"+mid);
+              celing=arr[mid];
 
                 break;
             }
@@ -27,10 +27,21 @@ public class CelingOfaNumber {
 
             }
             else if(target<arr[mid]){
+                celing=arr[mid];
                 end=mid-1;
             }
         }
-        System.out.println(min);
+
+        if(celing==-1){
+
+            System.out.println("Celing value not found(all value is les then celing value)");
+
+        }
+        else{
+
+            System.out.println("Celing value is"+celing);
+        }
+
 
 
 
