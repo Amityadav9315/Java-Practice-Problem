@@ -6,7 +6,7 @@ public class FloorNumber {
 
     static  void floorNumber(int[]   nums,int n){
         int target=50;
-        int floor=0;
+        int floor=-1;
 
         int start=0;
 
@@ -17,13 +17,15 @@ public class FloorNumber {
             int mid=start+(end-start)/2;
 
             if(nums[mid]==target){
+                floor=nums[mid];
 
-                System.out.println("Found at index:"+mid);
+
                 break;
 
             }
 
             else if(target>nums[mid]){
+                floor=nums[mid];
                 start=mid+1;
             }
 
@@ -31,13 +33,16 @@ public class FloorNumber {
 
                 end=mid-1;
             }
-            else if(target!=nums[mid]){
-                System.out.println("Element not found");
-            }
 
         }
-    }
 
+        if(floor==-1){
+            System.out.println("No floor value found all number are greater then fillor value");
+        }
+        else{
+            System.out.println("Floor value found at:"+floor);
+        }
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
