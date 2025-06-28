@@ -6,16 +6,31 @@ public class CelingOfaNumber {
 
     static  void   cealingofaNumber(int[] arr,int n){
 
-        int min=0;
+        int min=arr[0];
         int start=0;
         int end=arr.length-1;
+        int target=50;
 
-        for(int i=0; i<n; i++){
+
+        while(start<=end){
 
             int mid=start+(end-start)/2;
 
-            if()
+            if(target==arr[mid]){
+                System.out.println("Element found at index:"+mid);
+
+                break;
+            }
+
+            else if(target>arr[mid]){
+                start=mid+1;
+
+            }
+            else if(target<arr[mid]){
+                end=mid-1;
+            }
         }
+        System.out.println(min);
 
 
 
@@ -31,5 +46,6 @@ public class CelingOfaNumber {
 
             arr[i]=sc.nextInt();
         }
+        cealingofaNumber(arr,n);
     }
 }
