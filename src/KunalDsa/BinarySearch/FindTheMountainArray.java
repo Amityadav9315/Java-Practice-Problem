@@ -4,13 +4,21 @@ import java.util.Scanner;
 
 public class FindTheMountainArray {
 
-    static  void finftheMountainArray(int[]  arr,int n){
+    static  void findtheMountainArray(int[]  arr,int n){
 
         int target=3;
+        int count=0;
         for(int i=0; i<n; i++){
 
-            if
+            if(arr[i]==target){
+                count=i;
+                break;
+                svfksf
+
+
+            }
         }
+        System.out.println("Value is at Index:"+count);
 
 
     }
@@ -21,6 +29,8 @@ public class FindTheMountainArray {
         int[]  arr=new int[n];
         for(int i=0; i<n; i++){
             arr[i]=sc.nextInt();
+
         }
+        findtheMountainArray(arr,n);
     }
 }
