@@ -31,15 +31,16 @@ public class InfiniteArray {
 
             int mid = start + (end - start) / 2;
 
-            if (target == arr[mid]) {
-                System.out.println();
 
 
-            } else if (target > arr[mid]) {
+              if (target > arr[mid]) {
                 start = mid + 1;
             } else if (target < arr[mid]) {
                 end = mid - 1;
 
+            }
+            else  {
+                return mid;
             }
         }
         return  -1;
