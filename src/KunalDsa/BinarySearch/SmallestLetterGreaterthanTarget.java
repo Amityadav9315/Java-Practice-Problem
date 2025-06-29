@@ -6,16 +6,32 @@ public class SmallestLetterGreaterthanTarget {
 
 
 
-    static  void samallestLetter(int arr,int n){
+    static  void samallestLetter(char[] arr,int n) {
 
 
-        int start=0;
-        int
-        while(start<=end){
+        int start = 0;
+        char target = 'a';
+        int end = arr.length - 1;
+        int result=0;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
 
+            if (target == arr[mid]) {
+
+                result=arr[mid+1];
+            } else if (target > arr[mid]) {
+
+
+                start = mid + 1;
+
+
+            }else if(target<arr[mid]){
+                result=arr[mid];
+                end=mid-1;
+            }
 
         }
-
+        System.out.println(result);
     }
 
 
@@ -27,5 +43,11 @@ public class SmallestLetterGreaterthanTarget {
 
             arr[i]=sc.next().charAt(i);
         }
+
+        samallestLetter(arr,n);
+
+
+
     }
+
 }
