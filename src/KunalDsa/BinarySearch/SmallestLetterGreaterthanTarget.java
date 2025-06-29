@@ -44,6 +44,7 @@ public class SmallestLetterGreaterthanTarget {
             arr[i]=sc.next().charAt(i);
         }
 
+
         samallestLetter(arr,n);
 
 
