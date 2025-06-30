@@ -15,10 +15,19 @@ public class RotatedSortedArray {
 
     static int search(int[] nums, int target) {
 
-        int pivote=findPivote(nums);
-        if(pivote==-1){
-            return  binarySearch(nums,target,0, nums.length-1);
+        int pivote = findPivote(nums);
+        if (pivote == -1) {
+            return binarySearch(nums, target, 0, nums.length - 1);
         }
+
+        //if pivote is found
+        if (nums[pivote] == target) {
+            return pivote;
+        }
+        if(target>=nums[0]){
+            return  binarySearch(nums,target, 0,pivote-1);
+        }
+        return  binarySearch(nums,target, pivote+1,nums.length-1);
 
 
     }
