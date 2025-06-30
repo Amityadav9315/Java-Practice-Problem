@@ -13,7 +13,6 @@ public class FindTheMountainArray {
             if(arr[i]==target){
                 count=i;
                 break;
-                svfksf
 
 
             }
