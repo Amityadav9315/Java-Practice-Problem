@@ -9,11 +9,11 @@ public class NoofRotationArray {
         int count =0;
         for(int i=0; i<n-1; i++){
             if(arr[i]>arr[i+1]){
-                count++;
+                count=i;
 
             }
         }
-        System.out.println(count);
+        System.out.println(n-1-count);
 
 
 
@@ -27,5 +27,7 @@ public class NoofRotationArray {
             arr[i]=sc.nextInt();
 
         }
+
+        noofRotationofArray(arr,n);
     }
 }
