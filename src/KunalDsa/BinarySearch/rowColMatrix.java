@@ -10,6 +10,8 @@ public class rowColMatrix {
         while(r< arr.length&&c>=0){
             if(arr[r][c]==target){
                 System.out.println(r+","+c);
+                break;
+
             }
             else if(arr[r][c]<target){
                 r++;
@@ -24,7 +26,7 @@ public class rowColMatrix {
         int[][] arr={{10,20,30},
                      { 25,27,29},
                       {28,30,35}};
-        rowColumnMatrix(arr,27);
+        rowColumnMatrix(arr,35);
 
     }
 
