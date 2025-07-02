@@ -10,6 +10,8 @@ public class FlippingAnImage {
 
         for(int i=0; i<m; i++){
             for(int j=0; j<m; j++){
+
+
             }
 
         }
