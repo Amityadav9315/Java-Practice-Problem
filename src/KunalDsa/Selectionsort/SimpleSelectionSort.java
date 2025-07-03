@@ -12,6 +12,7 @@ public class SimpleSelectionSort {
                     if (arr[j] < arr[minIndex]) {
                         minIndex = j;
                     }
+
                 }
                 int temp = arr[minIndex];
                 arr[minIndex] = arr[i];
