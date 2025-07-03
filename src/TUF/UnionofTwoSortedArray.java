@@ -13,6 +13,8 @@ public class UnionofTwoSortedArray {
             if (index == 0 || result[index - 1] != arr1[i]) {
                 result[index++] = arr1[i];
             }
+
+
         }
         for (int i = 0; i < m; i++) {
             boolean isPresent = false;
