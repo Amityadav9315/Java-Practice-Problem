@@ -14,7 +14,6 @@ public class CycleSort {
                int temp= arr[c-1];
                 arr[c-1]=arr[i];
                 arr[i]=temp;
-
             }
         for(int x:arr){
             System.out.print(x);
