@@ -9,10 +9,17 @@ public class CycleSort {
 
         int value=0;
         for(int i=0; i<n; i++){
-            for(int j=i+1; j<n; j++){
-                int temp=
+                int c=arr[i];
+
+               int temp= arr[c-1];
+                arr[c-1]=arr[i];
+                arr[i]=temp;
+
             }
+        for(int x:arr){
+            System.out.print(x);
         }
+
 
     }
 
@@ -23,5 +30,6 @@ public class CycleSort {
         for(int i=0; i<n; i++){
             arr[i]=sc.nextInt();
         }
+        cycleSort(arr,n);
     }
 }
