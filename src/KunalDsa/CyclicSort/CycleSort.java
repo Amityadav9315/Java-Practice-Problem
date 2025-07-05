@@ -8,7 +8,8 @@ public class CycleSort {
 
 
         int value=0;
-        for(int i=0; i<n; i++){
+        int i=0;
+        while(i<n){
                 int c=arr[i];
 
                int temp= arr[c-1];
