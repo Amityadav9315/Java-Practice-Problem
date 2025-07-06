@@ -33,18 +33,18 @@ public class MatrixobtainedbyRotation {
         }
     }
 
-
-
-
     public static void main(String[] args) {
-        int [][] mat={
-                {1,0},
-                {0,1}
+        int[][] mat = {
+                {0, 0},
+                {1, 1}
         };
-        int[][] target={
-                {0,1},
-                {1,0}
+        int[][] target = {
+                {0, 1},
+                {1, 0}
         };
-        findRotation(mat,target);
+        findRotation(mat, target);
     }
 }
+
+
+
