@@ -4,14 +4,26 @@ import java.util.Scanner;
 
 public class FindDuplicate {
 
-    static  void findDuplicate(int arr,int n){
+    static  void findDuplicate(int[] arr,int n){
 
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n; j++){
+        int result=0;
+        boolean visited=false;
+        for(int i=0; i<n-1; i++){
+            for(int j=1; j<n; j++){
+             if(arr[i]==arr[j]&&i!=j){
+                result=arr[i];
+                 visited=true;
+                break;
 
+
+             }
 
             }
+            if(visited==true){
+                break;
+            }
         }
+        System.out.println(result);
 
 
     }
@@ -23,5 +35,6 @@ public class FindDuplicate {
         for(int i=0; i<n; i++){
             arr[i]=sc.nextInt();
         }
+        findDuplicate(arr,n);
     }
 }
