@@ -1,4 +1,4 @@
-package KunalDsa.Arrays;
+package KunalDsa.Interview;
 
 import java.util.Arrays;
 import java.util.Scanner;
