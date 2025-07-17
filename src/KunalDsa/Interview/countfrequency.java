@@ -16,7 +16,17 @@ public class countfrequency {
                 if(arr[i]==arr[j]){
                     count++;
 
+                    arr1[j]=visited;
+
                 }
+            }
+            if(arr[i]!=visited){
+                arr1[i]=count;
+            }
+        }
+        for(int i=0; i<n; i++){
+            if(arr[i]!=visited){
+                System.out.println(arr[i]+"  "+arr1[i]);
             }
         }
 
