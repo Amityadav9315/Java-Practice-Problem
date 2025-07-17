@@ -11,7 +11,7 @@ public class countfrequency {
         int visited=-1;
         for(int i=0; i<n; i++){
             int count=1;
-            for(int j=i+1; j<n; i++){
+            for(int j=i+1; j<n; j++){
 
                 if(arr[i]==arr[j]){
                     count++;
@@ -20,14 +20,16 @@ public class countfrequency {
 
                 }
             }
-            if(arr[i]!=visited){
+            if(arr1[i]!=visited){
                 arr1[i]=count;
             }
         }
         for(int i=0; i<n; i++){
-            if(arr[i]!=visited){
+            if(arr1[i]!=visited){
                 System.out.println(arr[i]+"  "+arr1[i]);
             }
+
+            System.out.println();
         }
 
 
@@ -41,6 +43,7 @@ public class countfrequency {
 
             arr[i]=sc.nextInt();
         }
+        countfrquency(arr,n);
     }
 
 
