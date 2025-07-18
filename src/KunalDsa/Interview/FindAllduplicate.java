@@ -1,5 +1,7 @@
 package KunalDsa.Interview;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class FindAllduplicate {
@@ -8,7 +10,7 @@ public class FindAllduplicate {
 
         int count=0;
         int index=0;
-        int[] arr2=new int[index];
+        List<Integer>  obj=new ArrayList<>();
         for(int i=0; i<n; i++){
             for(int j=i+1; j<n; j++){
                 if(arr[i]==arr[j]){
@@ -19,12 +21,12 @@ public class FindAllduplicate {
                 }
             }
             if(count>0) {
-                arr[index++] = arr[i];
+                obj.add(arr[i]);
             }
         }
-        for(int x:arr){
-            System.out.print(x+" ");
-        }
+
+            System.out.print(obj+" ");
+
 
 
 
