@@ -7,13 +7,23 @@ public class FindAllduplicate {
     static  void  findDuplicate(int[] arr,int n){
 
         int count=0;
+        int index=0;
+        int[] arr2=new int[index];
         for(int i=0; i<n; i++){
-            for(int j=i+1; j<n; i++){
+            for(int j=i+1; j<n; j++){
                 if(arr[i]==arr[j]){
+                    count++;
+
 
 
                 }
             }
+            if(count>0) {
+                arr[index++] = arr[i];
+            }
+        }
+        for(int x:arr){
+            System.out.print(x+" ");
         }
 
 
@@ -28,5 +38,6 @@ public class FindAllduplicate {
             arr[i]=sc.nextInt();
 
         }
+        findDuplicate(arr,n);
     }
 }
