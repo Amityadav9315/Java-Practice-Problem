@@ -8,10 +8,10 @@ public class FindAllduplicate {
 
     static  void  findDuplicate(int[] arr,int n){
 
-        int count=0;
-        int index=0;
+
         List<Integer>  obj=new ArrayList<>();
         for(int i=0; i<n; i++){
+            int count=0;
             for(int j=i+1; j<n; j++){
                 if(arr[i]==arr[j]){
                     count++;
@@ -19,6 +19,8 @@ public class FindAllduplicate {
 
 
                 }
+
+
             }
             if(count>0) {
                 obj.add(arr[i]);
