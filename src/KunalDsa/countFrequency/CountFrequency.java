@@ -1,4 +1,4 @@
-package Array;
+package KunalDsa.countFrequency;
 
 import java.util.Scanner;
 
