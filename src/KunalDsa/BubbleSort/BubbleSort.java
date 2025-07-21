@@ -20,9 +20,9 @@ public class BubbleSort {
 
                 }
             }
-            if(!visited){
-                break;
-            }
+//            if(!visited){
+//                break;
+//            }
         }
         for(int x:arr){
             System.out.print(x+" ");
