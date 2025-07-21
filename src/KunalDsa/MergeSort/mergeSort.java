@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class mergeSort {
 
     static void Conquer(int[] arr,int start,int mid,int end){
-        int n=arr.length-1;
       int[] merged=new int[end-start+1];
       int idx1=start;
       int idx2=mid+1;
@@ -18,7 +17,6 @@ public class mergeSort {
               merged[index++]=arr[idx1++];
           }
       }
-
       while(idx1<=mid){
           merged[index++]=arr[idx1++];
       }
@@ -28,12 +26,7 @@ public class mergeSort {
         for(int i=0,j=start; i<merged.length; i++,j++){
             arr[j]=merged[i];
         }
-
-
-
     }
-
-
     static  void Divide(int[] arr,int start,int end){
      if(start>=end){
          return;
@@ -42,11 +35,7 @@ public class mergeSort {
      Divide(arr,start,mid);
      Divide(arr,mid+1,end);
      Conquer(arr,start,mid,end);
-
-
     }
-
-
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
