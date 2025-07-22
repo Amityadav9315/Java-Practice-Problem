@@ -13,7 +13,7 @@ public class findSingleno {
         System.out.println(unique);
 
     }
-
+r3frfbrfnr  vrfbve
     public static void main(String[] args) {
 
 
