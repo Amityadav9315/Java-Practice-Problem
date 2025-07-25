@@ -12,7 +12,7 @@ public class pattern1 {
             return;
         }
         if(c<r){
-            System.out.println("*");
+            System.out.print ("*");
             pattern(r,c+1);
         }
         else {
