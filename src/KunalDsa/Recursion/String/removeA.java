@@ -13,6 +13,8 @@ public class removeA {
             if(str.charAt(i)!='a'){
                 result.append(str.charAt(i));
             }
+
+
         }
         System.out.println("The ans is "+ result);
 
