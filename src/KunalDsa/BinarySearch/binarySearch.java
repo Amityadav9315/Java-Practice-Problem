@@ -12,7 +12,7 @@ public class binarySearch {
         int end= arr.length-1;
         while(start<=end){
             int mid=start+(end-start)/2;
-            if(target<=arr[mid]){
+            if(target==arr[mid]){
                 System.out.println("Element found at index :"+mid);
 
 
@@ -29,8 +29,6 @@ public class binarySearch {
 
 
             }
-
-
 
 
     }

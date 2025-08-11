@@ -1,6 +1,6 @@
 package KunalDsa.MergeSort;
-
 import java.util.Scanner;
+
 
 public class mergeSort {
 
@@ -47,6 +47,7 @@ public class mergeSort {
         for(int i=0; i<n; i++){
             System.out.print(arr[i]+" ");
         }
+
 
     }
 }
