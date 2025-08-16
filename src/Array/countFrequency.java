@@ -10,7 +10,19 @@ public class countFrequency {
         for(int i=0; i<n-1; i++){
             int count=1;
             for(int j=i+1; j<n; j++ ){
+                if(arr[i]==arr[j]){
+                    count++;
+                    visited=true;
+                }
 
+            }
+            if(arr[i]!=arr[i+1]){
+                result[i]=count;
+            }
+        }
+        for(int i=0; i<n; i++){
+            if(arr[i]!=arr[i+1]){
+                System.out.println(arr[i]);
             }
         }
     }
