@@ -21,7 +21,7 @@ public class NumberToBinary {
         }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number to conert bimnary (-1 to stop)");
+        System.out.println("Enter the number to conert binary (-1 to stop)");
 
         System.out.println("Enter the number to convert in binary");
 
@@ -31,6 +31,7 @@ public class NumberToBinary {
                 System.out.println("Programme stopped");
                 break;
             }
+            vhhvbgkbjk
 
             numberTobInary(n);
 
