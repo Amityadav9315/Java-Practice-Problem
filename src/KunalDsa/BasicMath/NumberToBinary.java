@@ -31,7 +31,6 @@ public class NumberToBinary {
                 System.out.println("Programme stopped");
                 break;
             }
-            vhhvbgkbjk
 
             numberTobInary(n);
 
